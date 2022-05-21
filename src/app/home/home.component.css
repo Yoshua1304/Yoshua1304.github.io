@@ -4,13 +4,13 @@ div{
 .logo{
     border: 0;
     max-height: 50%;
-    max-width: 25%
+    max-width: 100%
 }
 
 .imagen{
     border: 0;
-    max-height: 18%;
-    max-width: 18%;
+    max-height: 50%;
+    max-width: 80%;
 }
 .header{
     display: flex;
@@ -22,18 +22,18 @@ div{
     display: flex;
     cursor: pointer;
     justify-content: center;
-    width: 50%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     font-family: Arial;
     color: #ffffff;
-    font-size: 32px;
+    font-size: 20px;
     padding: 10px;
     background-color: #00ff6f;
 	border-color: #00ff6f;
     border-radius: 400px;
-    
 }
+
 .slogan{
     display: flex;
  justify-content: center;
