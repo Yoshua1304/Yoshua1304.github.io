@@ -1,0 +1,89 @@
+div{
+    background-color: black;
+}
+.logo2{
+    position: static;
+   justify-content: center;
+   display: flex;
+   border: 0;
+   height: 100px;
+   width: 400px
+}
+.slogan2{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 25px;
+}
+.btn1 {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #00ff6f;
+	border-color: #00ff6f;
+    border-radius: 400px;
+}
+
+.form-floating{
+    width: 500%;
+    max-width: 320px;
+    background: rgb(195, 195, 195);
+    background-color: #bec5c2;
+    border-radius: 2500000px;
+}
+.form{
+    width: 500%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.casilla{
+    justify-content: left;
+    width: 150%;
+    color: #ffffff;
+    background: rgb(195, 195, 195);
+    background-color: #bec5c2;
+	border-color: #bec5c2;
+    border-radius: 250px;
+    padding: 10px;
+}
+.fecha{
+    color: #ffffff;
+    background-color: #bec5c2;
+	border-color: #bec5c2;
+    padding: 10px;
+    border-radius: 280px;
+}
+.document2{
+    color: #ffffff;
+    background-color: #bec5c2;
+	border-color: #bec5c2;
+    padding: 10px;
+    border-radius: 250px;
+    width: 52%;
+    
+}
+.botonoesFG{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:center;
+}
+.imagen{
+  width: 375px;
+  height: 50px;
+}
+.terminos{
+    color: #ffffff;
+}
