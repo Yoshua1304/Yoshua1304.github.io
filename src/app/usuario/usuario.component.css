@@ -1,0 +1,21 @@
+div{
+    background-color: black;
+}
+.atras{
+background-color: black;
+}
+.logo2{
+    position: static;
+   justify-content: center;
+   display: flex;
+   border: 0;
+   height: 100px;
+   width: 1500px;
+}
+.slogan2{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: fantasy;
+    font-size: 25px;
+}

@@ -1,13 +1,16 @@
 div{
     background-color: black;
 }
+.atras{
+background-color: black;
+}
 .logo2{
     position: static;
    justify-content: center;
    display: flex;
    border: 0;
    height: 100px;
-   width: 1500px
+   width: 1500px;
 }
 .slogan2{
     display: flex;
@@ -26,20 +29,13 @@ div{
     font-family: Arial;
     color: #ffffff;
     font-size: 25px;
-    padding: 5px;
+    padding: 10px;
     background-color: #00ff6f;
 	border-color: #00ff6f;
     border-radius: 400px;
 }
-.form-floating{
-    width: 500%;
-    max-width: 320px;
-    background: rgb(195, 195, 195);
-    background-color: #bec5c2;
-    border-radius: 2500000px;
-}
 .form{
-    width: 500%;
+    width: 800%;
     max-width: 320px;
     margin: 0 auto;
     display: flex;
@@ -51,27 +47,14 @@ div{
     justify-content: left;
     width: 150%;
     color: #ffffff;
-    background: rgb(195, 195, 195);
-    background-color: #bec5c2;
-	border-color: #bec5c2;
+    background: ffffff;
+    background-color: #ffffff;
+	border-color: #ffffff;
     border-radius: 250px;
     padding: 10px;
 }
-.fecha{
+.muted{
     color: #ffffff;
-    background-color: #bec5c2;
-	border-color: #bec5c2;
-    padding: 10px;
-    border-radius: 280px;
-}
-.document2{
-    color: #ffffff;
-    background-color: #bec5c2;
-	border-color: #bec5c2;
-    padding: 10px;
-    border-radius: 250px;
-    width: 52%;
-    
 }
 .botonoesFG{
     display: flex;
@@ -82,7 +65,4 @@ div{
 .imagen{
   width: 375px;
   height: 50px;
-}
-.terminos{
-    color: #ffffff;
 }
