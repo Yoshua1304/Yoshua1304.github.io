@@ -2,35 +2,37 @@
       src="https://thumbs.dreamstime.com/b/icono-de-flecha-s%C3%B3lida-hacia-atr%C3%A1s-o-la-izquierda-gran-tama%C3%B1o-negro-esbozado-como-s%C3%ADmbolo-vector-189359889.jpg"
       height="33" width="50" alt="Botón"> </a></div>
 <div class="contenedor">
-  <img class="logo" src="https://cdn.discordapp.com/attachments/719010991924314126/977421848151216158/logotf.png" />
-  <div class="slogan">TUFARMACIA</div>
+  <div class="slogan" >Usuario </div>
+
   <img class="logo2"
     src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-glyph-black-icon-png-image_691589.jpg "
-    onclick="openImg()" />
+   />
     <!--<input type="file" name="f_subir" id="f_subir" value="">-->
-  <div class="slogan2">NOMBRE</div>
-  <br />
-  <div>
-    <button class="boton" [routerLink]="['/', 'PerfilComponent']">
-      Busqueda de Farmacias
-    </button>
-    <br />
-    <button class="boton" [routerLink]="['/', 'LoginComponent']">
-      Busqueda de Medicamentos
-    </button>
-    <br />
-    <button class="boton" [routerLink]="['/', 'LoginComponent']">
-      Historial de Consultas
-    </button>
-    <br />
-    <button class="boton" [routerLink]="['/', 'EditarUsuarioComponent']">
-      Editar Perfil
-    </button>
-    <br /><br /><br />
-    <button class="boton2" [routerLink]="['/', 'LoginComponent']">
-      Cerrar Session
-    </button>
-  </div>
-  <br />
 
+  <div>
+    <div class="slogan2">Mira y Edita tu Usuario</div>
+    <br />
+    <button class="boton" [routerLink]="['/', 'PerfilComponent']">
+      Cambiar Contraseña
+    </button>
+    <br />
+    <button class="boton" [routerLink]="['/', 'LoginComponent']">
+      Cambiar Foto
+    </button>
+    <br />
+    <button class="boton" [routerLink]="['/', 'LoginComponent']">
+      Eliminar Cuenta
+    </button>
+    <br />
+  <div class="slogan2">Control de Notificaciones</div>
+  <br />
+  <div class="switch-button">
+    <!-- Checkbox -->
+    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+    <!-- Botón -->
+    <label for="switch-label" class="switch-button__label"></label>
+  </div>
+  <div class="alert alert-primary" role="alert"> Activar Ubicacion </div>
+
+  </div>
 </div>

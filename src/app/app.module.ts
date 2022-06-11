@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
- import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { UsuarioComponent } from './usuario/usuario.component'; 
+import { UsuariofarmaciaComponent} from './usuariofarmacia/usuariofarmacia.component';
+import { EditarUsuarioComponent } from './editarusuario/editarusuario.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { UsuarioComponent } from './usuario/usuario.component';
     PerfilComponent,
     HomeComponent,
     LoginComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    UsuariofarmaciaComponent,
+    EditarUsuarioComponent
+
   ],
   imports: [
     BrowserModule,
