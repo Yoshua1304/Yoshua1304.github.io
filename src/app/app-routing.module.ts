@@ -7,7 +7,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuariofarmaciaComponent} from './usuariofarmacia/usuariofarmacia.component';
 import { EditarUsuarioComponent} from './editarusuario/editarusuario.component';
 import { MedicamentoComponent } from './medicamento/medicamento.component';
-
+import { ListarMedicamentoComponent } from './listarmedicamento/listarmedicamento.component';
 
 const routes: Routes = [
   {
@@ -37,7 +37,11 @@ const routes: Routes = [
   {
     path:'MedicamentoComponent',
     component: MedicamentoComponent 
-  }
+  },
+  {
+    path:'ListarMedicamentoComponent',
+    component: ListarMedicamentoComponent
+  },
 ];
 
 @NgModule({

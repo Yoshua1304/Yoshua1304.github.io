@@ -14,6 +14,7 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuariofarmaciaComponent} from './usuariofarmacia/usuariofarmacia.component';
 import { EditarUsuarioComponent } from './editarusuario/editarusuario.component';
 import { MedicamentoComponent } from './medicamento/medicamento.component'; 
+import { ListarMedicamentoComponent } from './listarmedicamento/listarmedicamento.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MedicamentoComponent } from './medicamento/medicamento.component';
     UsuarioComponent,
     UsuariofarmaciaComponent,
     EditarUsuarioComponent,
-    MedicamentoComponent
+    MedicamentoComponent,
+    ListarMedicamentoComponent
 
   ],
   imports: [
