@@ -1,0 +1,124 @@
+<div class="contenedor">
+  <!--  <div class="atras-container">
+   <a class="atras" href="javascript:history.back()">
+      <img
+        src="https://thumbs.dreamstime.com/b/icono-de-flecha-s%C3%B3lida-hacia-atr%C3%A1s-o-la-izquierda-gran-tama%C3%B1o-negro-esbozado-como-s%C3%ADmbolo-vector-189359889.jpg"
+        height="33"
+        width="50"
+        alt="Botón"
+      />
+    </a>
+  </div>-->
+
+  <div class="header">
+    <div class="slogan2">REGISTRAR MEDICAMENTO</div>
+  </div>
+  <br />
+  <div>
+    <form class="form">
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="codigo" required />
+            <label for="floatingInput">Codigo</label>
+          </div>
+        </label>
+      </div>
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="nombre" required />
+            <label for="floatingInput">Nombre</label>
+          </div>
+        </label>
+      </div>
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class="form-floating ">
+            <input type="text" class="form-control" id="floatingInput" placeholder="laboratorio" required />
+            <label for="floatingInput">Laboratorio</label>
+          </div>
+        </label>
+      </div>
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="cantidad" required />
+            <label for="floatingInput">Cantidad</label>
+          </div>
+        </label>
+      </div>
+      <div>
+        <div class="input-group mb-2">
+          <span class="input-group-text" id="basic-addon1">Fecha Vencimiento</span>
+          <input type="date" class="form-control" placeholder="fecha" aria-label="fecha" aria-describedby="basic-addon1"
+            required />
+        </div>
+      </div>
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class=" form1 form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="precio" required />
+            <label for="floatingInput">Precio</label>
+          </div>
+        </label>
+        <div class="form3 form-floating fix-select">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Deslizar hacia abajo</option>
+            <option value="1">Marca</option>
+            <option value="2">Generica</option>
+          </select>
+          <label for="floatingSelect">Categoria </label>
+        </div>
+      </div>
+      <div>
+        <label for="validationDefault01" class="form-label">
+          <div class="form1 form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="concentracion" required />
+            <label for="floatingInput">Concentracion</label>
+          </div>
+        </label>
+        <div class="form2 form-floating fix-select">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected>Deslizar hacia abajo</option>
+            <option value="1">mL</option>
+            <option value="2">mg</option>
+            <option value="3">mmol</option>
+            <option value="4">mcg</option>
+            <option value="5">ng</option>
+            <option value="6">Kg</option>
+          </select>
+          <label for="floatingSelect">Unidad de Medida</label>
+        </div>
+      </div>
+
+    </form>
+    <br />
+    <div class="div-centrado borde fondo_deg">
+      <a href="javascript:explorar();">
+        <div class="">
+          <img src="https://png.pngtree.com/element_our/20190601/ourlarge/pngtree-file-upload-icon-image_1344464.jpg"
+            height="100px" title="subir imagen"><br clear="">
+          Subir Img
+        </div>
+      </a>
+      <input type="file" name="f_subir" id="f_subir" value="">
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-md-3 col-md-offset-9 text-right">
+        <div class="btn-group contenedor-botones" role="group">
+          <button class="btn1 btn-primary" type="submit" [routerLink]="['/', 'MedicamentoComponent']">
+            Guardar
+          </button>
+          <button class="btn2 btn-primary" type="reset" [routerLink]="['/', 'MedicamentoComponent']">
+            Limpiar
+          </button>
+          <button class="btn2 btn-primary" type="reset" [routerLink]="['/', 'UsuariofarmaciaComponent']">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

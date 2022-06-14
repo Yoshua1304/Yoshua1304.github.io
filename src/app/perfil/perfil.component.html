@@ -3,17 +3,12 @@
     <a class="atras" href="javascript:history.back()">
       <img
         src="https://thumbs.dreamstime.com/b/icono-de-flecha-s%C3%B3lida-hacia-atr%C3%A1s-o-la-izquierda-gran-tama%C3%B1o-negro-esbozado-como-s%C3%ADmbolo-vector-189359889.jpg"
-        height="33"
-        width="50"
-        alt="Botón"
-      />
+        height="33" width="50" alt="Botón" />
     </a>
   </div>
 
   <div class="header">
-    <img
-      src="https://cdn.discordapp.com/attachments/719010991924314126/977421848151216158/logotf.png"
-    />
+    <img src="https://cdn.discordapp.com/attachments/719010991924314126/977421848151216158/logotf.png" />
     <div class="slogan2">TUFARMACIA</div>
     <br />
   </div>
@@ -21,54 +16,28 @@
     <form class="form">
       <div>
         <label for="validationDefault01" class="form-label">
-          <div class="form-floating mb-3">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              placeholder="nombre"
-              required
-            />
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="nombre" required />
             <label for="floatingInput">Nombre</label>
           </div>
         </label>
       </div>
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="validationDefaultUsername floatingInput"
-          aria-describedby="inputGroupPrepend2"
-          placeholder="name@example.com"
-          required
-        />
-        <label for="floatingInput validationDefaultUsername" class="form-label"
-          >Correo Electronico</label
-        >
+      <div class="form-floating mb-2">
+        <input type="text" class="form-control" id="validationDefaultUsername floatingInput"
+          aria-describedby="inputGroupPrepend2" placeholder="name@example.com" required />
+        <label for="floatingInput validationDefaultUsername" class="form-label">Correo Electronico</label>
       </div>
       <div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1"
-            >Fecha de naciemiento</span
-          >
-          <input
-            type="date"
-            class="form-control"
-            placeholder="fecha"
-            aria-label="fecha"
-            aria-describedby="basic-addon1"
-            required
-          />
+        <div class="input-group mb-2">
+          <span class="input-group-text" id="basic-addon1">Fecha de naciemiento</span>
+          <input type="date" class="form-control" placeholder="fecha" aria-label="fecha" aria-describedby="basic-addon1"
+            required />
         </div>
       </div>
       <div>
         <div class="row">
-          <div class="col">
-            <select
-              class="form-select form-select-sm fix-select"
-              aria-label=".form-select-sm example"
-              required
-            >
+          <div class="col mb-2">
+            <select class="form-select form-select-sm fix-select" aria-label=".form-select-sm example" required>
               <option selected>Documento</option>
               <option value="1">DNI</option>
               <option value="2">RUC</option>
@@ -76,67 +45,32 @@
             </select>
           </div>
           <div class="col">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Numero"
-              aria-label="Last name"
-              required
-            />
+            <input type="text" class="form-control" placeholder="Numero" aria-label="Last name" required />
           </div>
         </div>
       </div>
-      <br />
-      <div class="form-floating mb-3">
-        <input
-          type="password"
-          class="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-          required
-        />
+      <div class="form-floating mb-2">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
         <label for="floatingPassword">Contraseña</label>
       </div>
-      <div class="form-floating mb-3">
-        <input
-          type="password"
-          class="form-control"
-          id="floatingPassword"
-          placeholder="Password"
-          required
-        />
+      <div class="form-floating mb-2">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
         <label for="floatingPassword">Repetir contraseña</label>
       </div>
       <div class="form-check mb-2">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="flexCheckIndeterminate"
-          required
-        />
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required />
         <label class="terminos" for="flexCheckIndeterminate">
           Aceptar Terminos y Condiciones
         </label>
       </div>
     </form>
-    <button
-      class="btn1 btn-primary"
-      type="submit"
-      [routerLink]="['/', 'LoginComponent']"
-    >
+    <button class="btn1 btn-primary" type="submit" [routerLink]="['/', 'LoginComponent']">
       Registrarse
     </button>
     <div class="buttons">
-      <img
-        class="imagen mt-10"
-        src="https://fitory.com/static/FitApp/img/BotonSesionFacebook.png"
-      />
+      <img class="imagen mt-10" src="https://fitory.com/static/FitApp/img/BotonSesionFacebook.png" />
 
-      <img
-        class="imagen mt-10"
-        src="https://fitory.com/static/FitApp/img/BotonSesionGoogle.png"
-      />
+      <img class="imagen mt-10" src="https://fitory.com/static/FitApp/img/BotonSesionGoogle.png" />
     </div>
   </div>
 </div>
