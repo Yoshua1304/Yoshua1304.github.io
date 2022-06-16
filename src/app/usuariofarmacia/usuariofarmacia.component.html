@@ -4,7 +4,7 @@
 <div class="contenedor">
   <img class="logo" src="https://cdn.discordapp.com/attachments/719010991924314126/977421848151216158/logotf.png" />
   <div class="slogan">TUFARMACIA</div>
-  <img class="logo2"
+  <img class="logo2" [routerLink]="['/', 'EditarUsuarioComponent']"
     src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-profile-glyph-black-icon-png-image_691589.jpg " />
 
   <div class="slogan2">NOMBRE FARMACIA</div>
@@ -18,12 +18,8 @@
       Listar Medicamentos
     </button>
     <br />
-    <button class="boton" [routerLink]="['/', 'LoginComponent']">
+    <button class="boton" [routerLink]="['/', 'DireccionComponent']">
       Registrar Direccion y estado
-    </button>
-    <br />
-    <button class="boton" [routerLink]="['/', 'LoginComponent']">
-      Editar Perfil
     </button>
     <br /><br /><br />
     <button class="boton2" [routerLink]="['/', 'LoginComponent']">

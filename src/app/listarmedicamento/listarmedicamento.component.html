@@ -3,12 +3,19 @@
       height="33" width="50" alt="Botón"> </a></div> -->
 <div class="contenedor">
   <img class="logo" src="https://cdn.discordapp.com/attachments/719010991924314126/977421848151216158/logotf.png" />
-  <div>
-    <div class="slogan">TUFARMACIA</div>
-    <br />
-    <div class="slogan2">Listar Productos</div>
-    <br />
+
+  <div class="slogan">TUFARMACIA</div>
+  <br />
+  <div class="slogan2">LISTAR MEDICAMENTOS</div>
+  <div class="box">
+    <div class="container-4">
+      <input type="search" id="search" placeholder="Buscar.." />
+      <button class="icon"><i class="fa fa-search">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        </i></button>
+    </div>
   </div>
+  <br />
   <div class="table-responsive">
     <table class="table table-bordered">
       <thead class="table-light">
@@ -53,6 +60,10 @@
         </tr>
       </tbody>
     </table>
+    <div></div>
   </div>
-
+  <br /><br />
+  <button class="boton2" [routerLink]="['/', 'UsuariofarmaciaComponent']">
+    Cerrar
+  </button>
 </div>

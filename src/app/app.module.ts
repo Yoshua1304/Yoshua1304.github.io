@@ -15,7 +15,10 @@ import { UsuariofarmaciaComponent} from './usuariofarmacia/usuariofarmacia.compo
 import { EditarUsuarioComponent } from './editarusuario/editarusuario.component';
 import { MedicamentoComponent } from './medicamento/medicamento.component'; 
 import { ListarMedicamentoComponent } from './listarmedicamento/listarmedicamento.component';
-
+import { DireccionComponent } from './direccion/direccion.component';
+import { BuscarMedicamentoComponent } from './buscarmedicamento/buscarmedicamento.component';
+import { BuscarFarmaciaComponent } from './buscarfarmacia/buscarfarmacia.component';
+import { HistorialComponent } from './historial/historial.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,11 @@ import { ListarMedicamentoComponent } from './listarmedicamento/listarmedicament
     UsuariofarmaciaComponent,
     EditarUsuarioComponent,
     MedicamentoComponent,
-    ListarMedicamentoComponent
+    ListarMedicamentoComponent,
+    DireccionComponent,
+    BuscarMedicamentoComponent,
+    BuscarFarmaciaComponent,
+    HistorialComponent
 
   ],
   imports: [
