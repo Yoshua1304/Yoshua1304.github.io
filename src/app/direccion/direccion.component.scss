@@ -18,22 +18,33 @@
   }
 }
 
-.slogan{
+.slogan {
   display: flex;
   justify-content: center;
   color: #ffffff;
   font-family: fantasy;
   font-size: 30px;
 }
-.slogan2{
-display: flex;
-justify-content: center;
-color: #ffffff;
-font-family: fantasy;
-font-size: 25px;
-position: relative;
-right: 45px;
+
+.slogan2 {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 25px;
+  position: relative;
+  right: 30px;
 }
+
+.slogan3 {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: fantasy;
+  font-size: 25px;
+
+}
+
 
 .btn1 {
   display: flex;
@@ -72,13 +83,14 @@ right: 45px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
 .form-floating {
   width: 300%;
   max-width: 310px;
   background: rgb(195, 195, 195);
   background-color: #bec5c2;
   border-radius: 2500000px;
-  left: -20%; 
+  left: -20%;
 }
 
 
@@ -96,13 +108,12 @@ right: 45px;
   right: -5px;
 }
 
-.form-check-input{
+.form-check-input {
   position: relative;
   right: 40px;
 }
 
-.form1{
+.form1 {
   position: relative;
   right: -5px;
 }
-

@@ -12,6 +12,8 @@ import { DireccionComponent } from './direccion/direccion.component';
 import { BuscarMedicamentoComponent } from './buscarmedicamento/buscarmedicamento.component';
 import { BuscarFarmaciaComponent } from './buscarfarmacia/buscarfarmacia.component';
 import { HistorialComponent } from './historial/historial.component';
+import { MapScreenComponent } from './maps/screens/map-screen/map-screen.component';
+
 
 const routes: Routes = [
   {
@@ -61,6 +63,10 @@ const routes: Routes = [
   {
     path: 'HistorialComponent',
     component: HistorialComponent
+  },
+  {
+    path: 'MapScreenComponent',
+    component: MapScreenComponent
   },
 ];
 

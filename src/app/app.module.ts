@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {  ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +19,9 @@ import { DireccionComponent } from './direccion/direccion.component';
 import { BuscarMedicamentoComponent } from './buscarmedicamento/buscarmedicamento.component';
 import { BuscarFarmaciaComponent } from './buscarfarmacia/buscarfarmacia.component';
 import { HistorialComponent } from './historial/historial.component';
+import { MapsModule } from './maps/maps.module';
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +37,7 @@ import { HistorialComponent } from './historial/historial.component';
     DireccionComponent,
     BuscarMedicamentoComponent,
     BuscarFarmaciaComponent,
-    HistorialComponent
+    HistorialComponent,
 
   ],
   imports: [
@@ -42,6 +45,7 @@ import { HistorialComponent } from './historial/historial.component';
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MapsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: environment.production,
   registrationStrategy: 'registerImmediately',
