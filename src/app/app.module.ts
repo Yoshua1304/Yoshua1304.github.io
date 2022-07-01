@@ -21,8 +21,6 @@ import { BuscarFarmaciaComponent } from './buscarfarmacia/buscarfarmacia.compone
 import { HistorialComponent } from './historial/historial.component';
 import { MapsModule } from './maps/maps.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
