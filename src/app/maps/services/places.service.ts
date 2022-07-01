@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Feature, PlacesResponse } from '../interfaces/places';
+import { PlacesApiClient } from '../api';
 
 @Injectable({
   providedIn: 'root'
@@ -7,12 +9,15 @@ import { Injectable } from '@angular/core';
 export class PlacesService {
 
   public useLocation?: [number, number];
+  
+  public isLoadingPlaces: boolean = false;
+  public places: Feature[] = [];
 
   get isUserLocationReady(): boolean {
     return !!this.useLocation;
   }
 
-  constructor(private http: HttpClient) {
+  constructor(private placesApi: PlacesApiClient) {
     this.getUserLocation();
   }
 
@@ -37,8 +42,27 @@ export class PlacesService {
 
   getPlacesByQuery(query: string = '') {
     // todo: evaluar cuando el query es nulo
+    if ( query.length === 0 ){
+      this.isLoadingPlaces = false;
+      this.places = [];
+      return;
+    }
 
-    this.http.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${ query }.json?country=pe&proximity=-77.00043664878905%2C-11.974823012536064&types=place%2Caddress%2Cpoi%2Ccountry%2Clocality%2Cneighborhood%2Cregion&language=es&access_token=pk.eyJ1IjoibHVpczkyY3IiLCJhIjoiY2w0aXcwbXhrMDBhazNrcGlzMjBvazQ2cyJ9.EKtLqACAbJSS7WfU-4y_Qg`)
-      .subscribe( console.log )
+    if ( !this.useLocation ) throw Error('No hay uselocation');
+
+    this.isLoadingPlaces = true;
+
+    this.placesApi.get<PlacesResponse>(`/${ query }.json`, {
+      params: { 
+        proximity: this.useLocation.join( ',')
+      }
+    })
+      .subscribe( resp => {
+
+        console.log(resp.features)
+
+        this.isLoadingPlaces = false;
+        this.places = resp.features;
+      } );
   }
 }

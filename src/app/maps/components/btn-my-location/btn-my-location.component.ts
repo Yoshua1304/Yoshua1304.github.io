@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MapService, PlacesService } from '../services';
+import { MapService, PlacesService } from '../../services';
 
 @Component({
   selector: 'app-btn-my-location',
