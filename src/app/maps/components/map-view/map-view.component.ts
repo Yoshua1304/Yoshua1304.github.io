@@ -41,7 +41,7 @@ export class MapViewComponent implements AfterViewInit {
 
     const popup = new Popup()
       .setHTML(`
-    <h6>Aqui estoy {{ ${position.coords.latitude} }}</h6>
+    <h6>Aqui estoy</h6>
     <span>Estoy en este lugar del mundo</span>
     
 
