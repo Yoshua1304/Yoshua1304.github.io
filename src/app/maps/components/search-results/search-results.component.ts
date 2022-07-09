@@ -29,6 +29,10 @@ export class SearchResultsComponent {
 
     const [ lng, lat ] = place.center;
     this.mapService.flyTo([ lng, lat ]);
+
+    this.placesService.deletePlaces(); 
   }
+
+ 
 
 }

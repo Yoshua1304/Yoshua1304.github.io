@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { MapService, PlacesService } from '../../services';
-import { Map, Popup, Marker } from 'mapbox-gl';
+import { Map, Popup, Marker, PositionOptions } from 'mapbox-gl';
+
 
 @Component({
   selector: 'app-map-view',
@@ -12,14 +13,23 @@ export class MapViewComponent implements AfterViewInit {
   @ViewChild('mapDiv')
   mapDivElement!: ElementRef;
 
+  public coordenadas: any;
 
   constructor(
     private placesService: PlacesService,
     private mapService: MapService
-      ) { }
+  ) { }
+
+  ngOnInit(): void {
+    this.coordenadas = JSON.parse (localStorage.getItem('useLocation') as any)
+    console.log("aqui",localStorage.getItem('useLocation'))
+  }
 
   ngAfterViewInit(): void {
     if (!this.placesService.useLocation) throw Error('No hay placesServices.userLocation');
+
+    // this.coordenadas = JSON.parse(localStorage.getItem('useLocation') as any)
+    // console.log("aqui", localStorage.getItem('useLocation'))
 
 
     const map = new Map({
@@ -31,8 +41,10 @@ export class MapViewComponent implements AfterViewInit {
 
     const popup = new Popup()
       .setHTML(`
-    <h6>Aqui estoy</h6>
+    <h6>Aqui estoy {{ ${position.coords.latitude} }}</h6>
     <span>Estoy en este lugar del mundo</span>
+    
+
 
     `);
 
@@ -43,6 +55,25 @@ export class MapViewComponent implements AfterViewInit {
 
     this.mapService.setMap(map);
 
+    this.watchPosition();
+
+  }
+
+
+  watchPosition() {
+    navigator.geolocation.watchPosition((position) => {
+      console.log(
+        `lat: ${position.coords.latitude}, lon: ${position.coords.longitude}`
+      );
+    }, (err) => {
+      console.log(err);
+    }, {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+
+    })
+    
   }
 
 }
