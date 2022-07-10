@@ -58,8 +58,6 @@ export class MapViewComponent implements AfterViewInit {
     this.watchPosition();
 
   }
-
-
   watchPosition() {
     navigator.geolocation.watchPosition((position) => {
       console.log(

@@ -33,6 +33,15 @@ export class SearchResultsComponent {
     this.placesService.deletePlaces(); 
   }
 
- 
+ getDirections( place: Feature ){
+  if (!this.placesService.useLocation) throw Error('No hay userLocation')
+
+  const start = this.placesService.useLocation!;
+  const end = place.center as [number, number];
+
+  this.mapService.getRouterBetweenPoints(start, end)
+
+ }
 
 }
+
